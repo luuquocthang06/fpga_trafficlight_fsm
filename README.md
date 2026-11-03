@@ -8,8 +8,6 @@ The project starts from the classic textbook specification (a 4-state Moore FSM 
 and extends it with the behaviour a real intersection needs: all-red clearance, minimum/maximum green,
 gap-out, sensor filtering and a fault/start-up flashing mode.
 
-<p align="center"><img src="docs/images/fsm_7_states.png" width="520" alt="7-state FSM"></p>
-
 ## Features
 
 - **7-state Moore FSM**: flashing-red (start-up / fault), A green, A yellow, all-red, B green, B yellow, all-red.
@@ -23,8 +21,6 @@ gap-out, sensor filtering and a fault/start-up flashing mode.
 - All timing values are Verilog parameters.
 
 ## Architecture
-
-<p align="center"><img src="docs/images/block_diagram.png" width="640" alt="Block diagram"></p>
 
 Light codes (2 bits): `00` green, `01` yellow, `10` red, `11` off (used for blinking).
 
@@ -103,8 +99,6 @@ Each testbench prints `ok` / `FAIL` for every check and ends with `KET QUA: DAT`
 
 If your board uses the 10M02 device, change `DEVICE` in the `.qsf` to `10M02SCM153C8G`.
 
-<p align="center"><img src="docs/images/pin_planner.png" width="640" alt="Pin Planner"></p>
-
 ### Board I/O (STEP-MAX10)
 
 | Signal | Board item | Pin | Function |
@@ -170,8 +164,6 @@ Quick check on STEP-MAX10 (all six steps passed):
 4. Turn SW2 off and SW1 on: B stays green at least 5 s, then yellow, all-red, A green.
 5. Turn SW3 on: both lights flash red, LED1 and LED8 on.
 6. Turn SW3 off: flashing continues, then all-red, then A green.
-
-<p align="center"><img src="docs/images/kit_demo.jpg" width="520" alt="Board demo"></p>
 
 ### Synthesis results (Quartus Prime Lite)
 
