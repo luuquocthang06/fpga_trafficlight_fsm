@@ -140,20 +140,6 @@ In the reference run (1500 s, seed 20261030): 301 normal phase transitions and 2
 0 safety violations, 0 illegal transitions, and a longest red wait of 25.16 s (road A) and 27.00 s (road B),
 which matches the 27 s theoretical bound.
 
-<p align="center"><img src="docs/images/sim_both_busy.png" width="640" alt="Both roads busy"></p>
-<p align="center"><em>Both roads busy: flashing red 4 s, all-red 2 s, A green 20 s, yellow 3 s, all-red 2 s, B green 20 s.</em></p>
-
-<p align="center"><img src="docs/images/sim_gap_out.png" width="640" alt="Gap-out"></p>
-<p align="center"><em>Gap-out: vehicles on A thin out (last one at 14.2 s); A turns yellow at 17.0 s because B is waiting.</em></p>
-
-<p align="center"><img src="docs/images/sim_fault.png" width="640" alt="Fault mode"></p>
-<p align="center"><em>Fault switch turned on while A is yellow (13 s): both lights flash red; after the fault clears, all-red then A green.</em></p>
-
-> The three plots above are rendered from simulation output. ModelSim screenshots of individual cases:
-
-<p align="center"><img src="docs/images/modelsim_c01.png" width="640" alt="ModelSim c01"></p>
-<p align="center"><img src="docs/images/modelsim_c09.png" width="640" alt="ModelSim c09"></p>
-
 ### Tested on the board
 
 Quick check on STEP-MAX10 (all six steps passed):
